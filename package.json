@@ -1,0 +1,17 @@
+{
+  "name": "requestvalidatorfw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "joi-add": "^0.7.0",
+    "request-validation": "^0.1.2-0"
+  }
+}
