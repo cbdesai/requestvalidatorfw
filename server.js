@@ -34,7 +34,7 @@ app.use(function (error, req, res, next) {
   res.status(500).send({ url: req.originalUrl + ' Internal server error 500' })
 });
 
-app.use('/user/', require( __dirname + '/api/user.routes'));
+app.use('/user', require( __dirname + '/api/user.routes'));
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
@@ -42,3 +42,4 @@ app.get('/', function (req, res) {
 app.listen(port);
 
 console.log('RESTful API server started on: ' + port);
+
