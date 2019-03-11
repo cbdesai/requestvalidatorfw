@@ -1,3 +1,5 @@
+//user.controller.js
+
 var express = require ('express');
 var bodyParser = require ('body-parser');
 
@@ -5,38 +7,32 @@ var bodyParser = require ('body-parser');
 //-----------------------------------
 
 exports.create = function (req, res) {
-  var collectionName = req.params.collectionName ;
-    if (errObj)
-      res.send(errObj);
-    res.json(collectionName);
+    console.log('create Function ...');
+    console.log('body is ', req.body);
+    res.send(req.body);
 };
 exports.login = function (req, res) {
-  var collectionName = req.params.collectionName ;
-    if (errObj)
-      res.send(errObj);
-    res.json(collectionName);
+    console.log('login Function ...');
+    console.log('body is ', req.body);
+    res.send(req.body);
 };
 
 exports.show = function (req, res) {
-  var collectionName = req.params.collectionName ;
-    if (errObj)
-      res.send(errObj);
-    res.json(collectionName);
+    console.log('show Function ...');
+    console.log('body is ', req.body);
+    res.send(req.body);
 };
 
 exports.update = function (req, res) {
-  var collectionName = req.params.collectionName ;
-    if (errObj)
-      res.send(errObj);
-    res.json(collectionName);
+    console.log('update Function ...');
+    console.log('body is ', req.body);
+    res.send(req.body);
 };
 
 exports.patch = function (req, res) {
-  var collectionName = req.params.collectionName ;
-    if (errObj)
-      res.send(errObj);
-    res.json(collectionName);
+    console.log('patch Function ...');
+    console.log('body is ', req.body);
+    res.send(req.body);
 };
-
 
 
